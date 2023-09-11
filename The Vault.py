@@ -16,7 +16,7 @@ def random_password():
 # database functions
 
 def create():
-    conn = psycopg2.connect(dbname="password", user="postgres", password="Leonbrownz123", host="localhost", port="5432")
+    conn = psycopg2.connect(dbname="password", user="postgres", password="Password", host="localhost", port="5432")
     curser = conn.cursor()
 
     curser.execute('''CREATE TABLE passwords(ID SERIAL, Platform Name text, Email text, Username text, Password text);''')
